@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks | landing page</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+<section>
+     <div class="circle"></div>
+    <header>
+        <a href="#"><img src="assets/logo.png" class="logo" alt=""></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur fuga vitae repudiandae ullam quos dolore, deserunt a quaerat esse accusamus autem animi, iste perferendis! Nobis debitis corporis culpa soluta.</p>
+            <a href="#">Learn More</a>
+
+        </div>
+            <div class="imgBox">
+                <img src="assets/img1.png" class="starbucks" alt="">
+           </div>
+    </div>
+
+    <ul class="thumb">
+        <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
+        <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png');changeCircleColor('#eb7495')"></li>
+        <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png');changeCircleColor('#d752b1')"></li>
+    </ul>
+
+    <ul class="sci">
+        <li><a href="#"><img src="assets/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="assets/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="assets/instagram.png" alt=""></a></li>
+    </ul>
+</section>
+
+<!-- scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
