@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.content{
+    overflow: hidden;
+}
+
 section{
     position: relative;
     width: 100%;
@@ -45,6 +49,20 @@ header ul li a{
     margin-left: 40px;
     text-decoration: none;
 }
+.icons{
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #017143;
+    display: none;
+}
+.icons i{
+    cursor: pointer;
+}
+
 .content{
     position: relative;
     width: 100%;
@@ -139,4 +157,130 @@ header ul li a{
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+
+@media (max-width:1200px){
+    header{
+        padding: 20px 50px;
+    }
+    section{
+        padding: 50px 50px 0;
+    }
+    .textBox h2{
+        font-size: 3em;
+    }
+    .textBox p{
+        font-size: 0.94rem;
+    }
+    .content .imgBox{
+        width: 300px;
+        padding-right: 0;
+    }
+    .thumb li img{
+        max-width: 40px;
+    }
+    .sci{
+        right: 10px;
+    }
+}
+@media (max-width:991px){
+   header{
+       padding: 20px 20px;
+   }
+   header ul{
+       display: none;
+   }
+   .icons{
+       display: block;
+   }
+   .icons i{
+    font-size: 30px;
+   }
+   .content{
+    flex-direction: column;
+   }
+   .content .textBox{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+       margin-bottom: 40px;
+   }
+   .content .textBox h2{
+       font-size: 2.5em;
+   }
+   .content .imgBox{
+       width: 100%;
+       justify-content: center;
+   }
+   .content .imgBox img{
+    max-width: 280px;
+   }
+   .thumb{
+       bottom: 10px;
+   }
+   .sci{
+       top: auto;
+       bottom: 30px;
+       right: 50%;
+       transform: translateX(50%);
+   }
+   .circle{
+       clip-path: circle(400px at center bottom);
+   }
+}
+
+@media (max-width:500px){
+    header{
+        padding: 20px 20px;
+    }
+    section{
+        padding: 50px 20px 0;
+    }
+    .content{
+        position: relative;
+        flex-direction: column;
+    }
+    .content .textBox{
+        position: absolute;
+        width: 100%;
+        display: flex;
+    }
+    .content .textBox h2{
+        font-size: 2em;
+    }
+    /* .content .textBox h2 span{
+        color: #000;
+    } */
+    .content .textBox p{
+        font-size: 0.8rem;
+    }
+    .content .textBox a{
+        font-size: 0.8rem;
+        color: #fff;
+        background: #000;
+    }
+    .content .imgBox{
+        width: 100%;
+        margin-top: 220px;
+        margin-right: 190px;
+        display: flex;
+        justify-content: center;
+    }
+    .content .imgBox img{
+        max-width: 150px;
+    }
+    .thumb{
+        bottom: 10px;
+    }
+    .thumb li img{
+        max-width: 30px;
+        align-items: center;
+    }
+    .sci{
+        right: 50px;
+    }
 }
