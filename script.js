@@ -20,5 +20,5 @@ ScrollReveal().reveal('.textBox,h2', { delay:"500", origin: "left"});
 
 
 
-ScrollReveal().reveal('.thumb', { origin: "bottom"});
-ScrollReveal().reveal('.sci', { origin: "right"});
+ScrollReveal().reveal('.thumb', { origin: "right"});
+// ScrollReveal().reveal('.sci', { origin: "right"});
